@@ -1,0 +1,19 @@
+<article>
+  
+    <dl>
+     <div>
+        <%= image_tag product.image.url%>
+      </div>
+
+      <dt>Name</dt>
+      <dd><%= product.name %></dd>
+      <dt>Description</dt>
+      <dd><%= product.description %></dd>
+      <dt>Quantity</dt>
+      <dd><%=  line_item.quantity %></dd>
+      <dt>Price</dt>
+      <dd><%= humanized_money_with_symbol product.price %></dd>
+    </dl>
+  
+</article>
+
