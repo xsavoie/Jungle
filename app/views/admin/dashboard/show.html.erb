@@ -1,7 +1,26 @@
 <h1>Admin Dashboard</h1>
 <br>
 
-<ul class="list-group list-group-flush">
-  <li class="list-group-item">Total number of products: <%= @products %></li>
-  <li class="list-group-item">Total number of categories: <%= @categories %></li>
-</ul>
+ <div class="panel panel-default products">
+
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th colspan="2">General stats</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            Total number of products: <%= @products %>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Total number of categories: <%= @categories %>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>

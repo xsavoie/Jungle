@@ -6,6 +6,7 @@
 // App
 @import "products";
 @import "about";
+@import "login";
 
 // Global
 body {
@@ -15,4 +16,14 @@ body {
 // Bootstrap adjustments
 form.button_to {
   display: inline;
+}
+
+.navbar-right {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-nav-div {
+  margin-top: 3%;
+  margin-right: 12px;
 }
