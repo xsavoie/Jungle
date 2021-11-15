@@ -1,7 +1,5 @@
 require 'rails_helper'
 
-# Test that the expect error is found within the .errors.full_messages array
-
 RSpec.describe Product, type: :model do
   describe 'Validations' do
 
