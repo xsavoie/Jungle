@@ -21,6 +21,11 @@ form.button_to {
 .navbar-right {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.left-span {
+  margin: 13px 10px;
 }
 
 .right-nav-div {
