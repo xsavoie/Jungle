@@ -121,6 +121,7 @@ RSpec.describe User, type: :model do
       @user.save
 
       @auth_user = @user.authenticate_with_credentials('test1@test.com', '123456')
+      expect(@auth_user).to_not be_nil
       expect(@auth_user.first_name).to eq('John')
       expect(@auth_user.last_name).to eq('Doe')
     end
@@ -136,6 +137,7 @@ RSpec.describe User, type: :model do
       @user.save
 
       @auth_user = @user.authenticate_with_credentials('   test1@test.com', '123456')
+      expect(@auth_user).to_not be_nil
       expect(@auth_user.first_name).to eq('John')
       expect(@auth_user.last_name).to eq('Doe')
     end
@@ -151,6 +153,7 @@ RSpec.describe User, type: :model do
       @user.save
 
       @auth_user = @user.authenticate_with_credentials('test1@TEST.COM', '123456')
+      expect(@auth_user).to_not be_nil
       expect(@auth_user.first_name).to eq('John')
       expect(@auth_user.last_name).to eq('Doe')
     end
@@ -166,6 +169,7 @@ RSpec.describe User, type: :model do
       @user.save
 
       @auth_user = @user.authenticate_with_credentials('test1@test.com', '123456')
+      expect(@auth_user).to_not be_nil
       expect(@auth_user.first_name).to eq('John')
       expect(@auth_user.last_name).to eq('Doe')
     end
